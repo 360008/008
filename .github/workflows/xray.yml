@@ -105,7 +105,7 @@ jobs:
           VLESS_UUID="$(~/xray/xray uuid)"
           VLESS_PATH="/api/$(openssl rand -hex 4)"
           ALT_EMAIL="alt-guest-$(openssl rand -hex 2)"
-          ALT_PASSWORD="$(openssl rand -hex 16)"
+          ALT_PASSWORD="$(openssl rand -hex 8)"
           ALT_PATH="/api/$(openssl rand -hex 4)"
           while [[ "$ALT_PATH" == "$VLESS_PATH" ]]; do
             ALT_PATH="/api/$(openssl rand -hex 4)"
